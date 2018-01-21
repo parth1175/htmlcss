@@ -7,15 +7,22 @@ html{
 }
 
 
+
 .grid{
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 .lside{
   border: 2px solid black;
   grid-row-start: 1;
   grid-row-end: 3;
+  padding-top: 20px;
+}
+
+.lside p{
+  display: block;
+  text-align: center;
 }
 
 .rside{

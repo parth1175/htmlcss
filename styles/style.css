@@ -28,7 +28,7 @@ body{
 .lside{
   border: 2px solid black;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 1;
   padding-top: 20px;
 }
 

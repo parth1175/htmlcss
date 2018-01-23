@@ -1,0 +1,36 @@
+.d{
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.red{
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: red;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+#subtitle{
+  border-bottom: 2px solid black;
+}
+
+.def{
+  font-size: 20px;
+}
+
+h3{
+  font-size: 35px;
+}
+
+h2{
+  font-size: 45px;
+}
+
+.group{
+  margin-top: 50px;
+}

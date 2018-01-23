@@ -32,6 +32,13 @@ body{
   padding-top: 20px;
 }
 
+#subtitle{
+  margin-left: 7px;
+}
+
+.info{
+  margin-left: 7px;
+}
 
 
 .lside p{
@@ -43,7 +50,7 @@ body{
   margin-bottom: 0;
 }
 
-a{
+.lside a{
   color: white;
 }
 

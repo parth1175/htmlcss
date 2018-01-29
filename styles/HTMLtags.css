@@ -1,0 +1,12 @@
+.subtitle{
+  border-bottom: 2px solid black;
+  display: block;
+  margin-bottom: 17px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.info{
+  line-height: 25px;
+}

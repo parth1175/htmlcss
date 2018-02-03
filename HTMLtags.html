@@ -3,7 +3,7 @@
 <head>
   <title>Units</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <link rel="stylesheet" type="text/css" href="styles/units.css">
+  <link rel="stylesheet" type="text/css" href="styles/HTMLtags.css">
   <link rel="shortcut icon" href="./images/ruler.ico" />
 </head>
 
@@ -24,27 +24,56 @@
 <h3 class = "subtitle" id = "button">button</h3>
 <div class = "info">
 <ul>
-  <li>defines a clickable button</li>
-  <li> Inside, you can put content like text or images</li>
+  <li class = "m"><em><strong>defines</strong> a clickable button</em></li>
     <ul>
-      <li> <strong>Example</strong>: if the font-size of the doc is 12ot, 1em is equal to 12pt.
+      <li> Inside, you can put content like text or images</li>
     </ul>
-  <li> They can have <em>whole-number</em> or <em>decimal</em> values
-  </li>
+  <li class = "m"><em> A button is <strong>basically a box</strong> that.... </em></li>
+    <ul>
+      <li> changes color with active </li>
+      <li> is automatically assigned the type of button </li>
+      <li> has an animation that resembles the actual clicking of a button </li>
+    </ul>
 </ul>
+
+<div class = "attributes" id = "blue">
+  <h4> Attributes </h4>
+  <ul>
+    <li>type</li>
+      <ul>
+        <li> button</li>
+        <li> reset</li>
+        <li> submit</li>
+      </ul>
+    <li>onclick</li>
+      <ul>
+        <li> (whatever action)
+      </ul>
+  </ul>
 </div>
 
-
 <script>
-  document.getElementById("button").innerHTML = "<button>";
+  let height = document.getElementById("blue").offsetHeight;
+  console.log("This is the height " + height);
+
+  let width = document.getElementById("blue").offsetWidth;
+  console.log("This is the width " + width);
+
+  width = width - 500;
+  width = width + "px";
+  console.log("this is the new width " + width);
+
+  document.getElementById("blue").style.width = width;
 </script>
 
 
 
+</div>
+
 <h3 class = "subtitle">textarea</h3>
 <div class = "info">
 <ul>
-  <li>This creates a textarea box that is sizable</li>
+  <li class = "m">This creates a textarea box that is sizable</li>
 </ul>
 <img src="./images/textarea.jpg" style = "margin-left: 20px;">
 </div>
@@ -52,7 +81,7 @@
 <h3 class = "subtitle">Points (pt)</h3>
 <div class = "info">
 <ul>
-  <li>Traditionally used in printed media</li>
+  <li class = "m">Traditionally used in printed media</li>
   <li>Is equal to <em>1/72</em> of an inch</li>
 </ul>
 </div>
@@ -78,6 +107,7 @@
           <p><a href="./units.html">Units</a></p>
           <p><a href ="./js.html">Javascript</a></p>
           <p><a href ="./HTMLattributes.html">HTML Attributes</a></p>
+          <p><a href ="./HTMLtags.html">HTML tags</a></p>
 
         </div>
     </div>

@@ -5,7 +5,14 @@
 <title>HTML | CSS</title>
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/js.css">
-<link rel="shortcut icon" href="./images/css2.ico" />
+<link rel="shortcut icon" href="./images/ruler.ico" />
+
+<style>
+  .o{
+    color: white;
+  }
+</style>
+
 </head>
 <body>
 <h1 class = "title"> HTML and CSS functions</h1>
@@ -23,7 +30,7 @@
 <p> These are the two methods of Javascript that I know so far</p>
 <ul>
 
-  <li><strong> confirm("")</strong>
+  <li class = "m"><strong> confirm("")</strong>
     <ul>
       <li> Inside goes the text that will pop up in the confirm window </li>
     </ul>
@@ -31,7 +38,7 @@
 
 <p></p>
 
-  <li><strong> alert("")</strong>
+  <li class = "m"><strong> alert("")</strong>
     <ul>
       <li> Inside goes the text that will pop up in the alert </li>
     </ul>
@@ -39,7 +46,7 @@
 
 <p></p>
 
-  <li><strong> console.log("")</strong>
+  <li class = "m"><strong> console.log("")</strong>
     <ul>
       <li> This is to print stuff to the console </li>
     </ul>
@@ -47,16 +54,23 @@
 
 <p></p>
 
-  <li><strong> document.write("")</strong>
+  <li class = "m"><strong> document.write("")</strong>
     <ul>
       <li> This is to write something to the page itself </li>
-      <li> Theres really no reason to use this, because it is easier to just use HTML to wite something to the page. </li>
+      <ul>
+        <li> Theres really no reason to use this, because it is easier to just use HTML to wite something to the page. </li>
+      </ul>
+      <li> If you call this in a function during the usage of the page (like in a button)</li>
+        <ul>
+          <li> Then it will fuck up</li>
+        </ul>
+      <li> <strong> Basically don't use this</strong></li>
     </ul>
   </li>
 
 <p></p>
 
-  <li><strong> .getElementsByClassName("") </strong>
+  <li class = "m"><strong> .getElementsByClassName("") </strong>
     <ul>
       <li>If you print this to the console, then it will just print a bunch of useless shit about the class</li>
     </ul>
@@ -64,7 +78,7 @@
 
 <p></p>
 
-  <li><strong> .getElementById("") </strong>
+  <li class = "m"><strong> .getElementById("") </strong>
     <ul>
       <li> If you print this to the console then it will give you the entire code of the element whose id you gave.
     </ul>
@@ -76,32 +90,53 @@
 
 <p></p>
 
-  <li> <strong>document.getElementById("")</strong>
-    <ul>
+  <li class = "m"> <strong>document.getElementById("")</strong></li>
 
 <p></p>
 
-    <li><em> document.getElementById("").innerHTML</em>
+    <li class = "m"><em> document.getElementById("").innerHTML</em>
       <ul>
         <li>This is print everything between the tags of the specified element</li>
         <li> It will return a string</li>
         <li> <em>document.getElementById("").innerHTML = "this is a string";</em></li>
           <ul>
-            <li> You can change a string with this method, however, you cannot change HTML code this way.</li>
+            <li> You can change a string with this method, and since when you write something as a string in an editor...you can change HTML code</li>
             <li> UPDATE: nvm, the follow code actually worked....</li>
           </ul>
       </ul>
     </li>
+    <img id = "innerHTML" src = "./images/innerHTML.png" style = "margin-left: 25px; margin-top: 10px; margin-bottom: 10px;">
+    <script>
+    let width = document.getElementById("innerHTML").clientWidth;
+    let w1 = document.getElementById("innerHTML").offsetWidth;
 
-    <img src = "./images/innerHTML.png" style = "margin-left: 25px; margin-top: 10px; margin-bottom: 10px;">
-    <li> Here I tried to use innerHTML to show the button tag, but it showed an <em>actual button</em> instead</li>
+    let height = document.getElementById("innerHTML").offsetHeight;
+    let h1 = document.getElementById("innerHTML").clientHeight;
+
+    console.log("clientWidth: " + width);
+    console.log("offsetWidth: " + w1);
+
+    console.log("clientHeight: " + height);
+    console.log("offsetHeight: " + h1);
+
+    document.getElementById("innerHTML").style.height = 267 +"px";
+    document.getElementById("innerHTML").style.width = 415 + "px";
+
+    </script>
+    <li class = "m"> Here I tried to use innerHTML to show the button tag, but it showed an <em>actual button</em> instead</li>
       <ul>
         <li> I couldnt get this to work manually, but it worked in this case......by mistake.</li>
       </ul>
 
-<p></p>
+    <li class = "m"> You can also use <em> document.getElementById("").innerHTML </em> to change code with the specied element</li>
+      <ul>
+        <li>if the element is a div</li>
+      </ul>
+<p class = "o">r</p>
+<p class = "o">r</p>
+<p class = "o">r</p>
 
-    <li><em> document.getElementById("").href</em>
+    <li class = "m"><em> document.getElementById("").href</em>
       <ul>
         <li> You can do this: <strong>document.getElementById("").href = "https://www.w3schools.com";</strong>
           <ul>
@@ -113,7 +148,7 @@
 
 <p></p>
 
-    <li><em> document.getElementById("").target</em>
+    <li class = "m"><em> document.getElementById("").target</em>
       <ul>
         <li> You can do this: <strong>document.getElementById("").target = "_blank"</strong>
           <ul>
@@ -125,7 +160,7 @@
 
 <p></p>
 
-    <li><em> document.getElementById("").src</em>
+    <li class = "m"><em> document.getElementById("").src</em>
       <ul>
         <li> You can do this: <strong>document.getElementById("").src = "pic_bulbon.gif"</strong>
           <ul>
@@ -140,12 +175,23 @@
 
 <p></p>
 
-  <li><strong> document.getElementById("").style</strong>
+  <li class = "m"><a href = "./js-styles/index.html"><strong> document.getElementById("").style</strong></a>
     <ul>
       <li> you are able to change CSS styling because of inline-styles in HTML</li>
       <li> <strong> Ex: </strong> <em> document.getElementById("").style.fontSize = "35px";</em></li>
     </ul>
   </li>
+
+<p></p>
+<p></p>
+<p></p>
+
+<ul>
+  <li style = "font-weight: 700;"> numOne.addEventListener(“click”, funct_to_be_executed()); </li>
+</ul>
+
+
+
 
 
 </ul>
@@ -164,6 +210,8 @@
   <p><a href="./units.html">Units</a></p>
   <p><a href ="./js.html">Javascript</a></p>
   <p><a href ="./HTMLattributes.html">HTML Attributes</a></p>
+  <p><a href ="./HTMLtags.html">HTML tags</a></p>
+
 
   </div>
 

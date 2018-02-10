@@ -5,13 +5,7 @@
 <title>HTML | CSS</title>
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/js.css">
-<link rel="shortcut icon" href="./images/ruler.ico" />
-
-<style>
-  .o{
-    color: white;
-  }
-</style>
+<link rel="shortcut icon" href="./images/css2.ico" />
 
 </head>
 <body>
@@ -86,15 +80,17 @@
 
 <p></p>
 
+
+
+
+
+
+
 <h2> Javascript can be used to change <strong> HTML attribute values </strong> or <strong> CSS styling </strong> </h3>
 
 <p></p>
 
-  <li class = "m"> <strong>document.getElementById("")</strong></li>
-
-<p></p>
-
-    <li class = "m"><em> document.getElementById("").innerHTML</em>
+    <li class = "m"><strong> document.getElementById("").innerHTML</strong>
       <ul>
         <li>This is print everything between the tags of the specified element</li>
         <li> It will return a string</li>
@@ -105,22 +101,13 @@
           </ul>
       </ul>
     </li>
-    <img id = "innerHTML" src = "./images/innerHTML.png" style = "margin-left: 25px; margin-top: 10px; margin-bottom: 10px;">
+    <p></p>
+    <img id = "inHTML" src = "./images/innerHTML.png">
+    <p></p>
     <script>
-    let width = document.getElementById("innerHTML").clientWidth;
-    let w1 = document.getElementById("innerHTML").offsetWidth;
 
-    let height = document.getElementById("innerHTML").offsetHeight;
-    let h1 = document.getElementById("innerHTML").clientHeight;
-
-    console.log("clientWidth: " + width);
-    console.log("offsetWidth: " + w1);
-
-    console.log("clientHeight: " + height);
-    console.log("offsetHeight: " + h1);
-
-    document.getElementById("innerHTML").style.height = 267 +"px";
-    document.getElementById("innerHTML").style.width = 415 + "px";
+    document.getElementById("inHTML").style.height = 267 +"px";
+    document.getElementById("inHTML").style.width = 500 + "px";
 
     </script>
     <li class = "m"> Here I tried to use innerHTML to show the button tag, but it showed an <em>actual button</em> instead</li>
@@ -132,13 +119,11 @@
       <ul>
         <li>if the element is a div</li>
       </ul>
-<p class = "o">r</p>
-<p class = "o">r</p>
-<p class = "o">r</p>
+<p></p>
 
-    <li class = "m"><em> document.getElementById("").href</em>
+    <li class = "m"><strong> document.getElementById("").href</strong>
       <ul>
-        <li> You can do this: <strong>document.getElementById("").href = "https://www.w3schools.com";</strong>
+        <li> You can do this: <em>document.getElementById("").href = "https://www.w3schools.com";</em>
           <ul>
             <li> This changes the link of something</li>
           </ul>
@@ -148,9 +133,9 @@
 
 <p></p>
 
-    <li class = "m"><em> document.getElementById("").target</em>
+    <li class = "m"><strong> document.getElementById("").target</strong>
       <ul>
-        <li> You can do this: <strong>document.getElementById("").target = "_blank"</strong>
+        <li> You can do this: <em>document.getElementById("").target = "_blank"</em>
           <ul>
             <li> The target attrbite specifies where to open the linked document</li>
           </ul>
@@ -160,9 +145,9 @@
 
 <p></p>
 
-    <li class = "m"><em> document.getElementById("").src</em>
+    <li class = "m"><strong> document.getElementById("").src</strong>
       <ul>
-        <li> You can do this: <strong>document.getElementById("").src = "pic_bulbon.gif"</strong>
+        <li> You can do this: <em>document.getElementById("").src = "pic_bulbon.gif"</em>
           <ul>
             <li> The src attribute species with image to open. This attribute is only used with images / videos. Links use href</li>
           </ul>
@@ -187,12 +172,27 @@
 <p></p>
 
 <ul>
+  <li style = "font-weight: 700;"> var numOne = document.getElementById(“num-one”); </li>
+  <ul>
+    <li> Here you are storing the num-one element in the variable "numOne"</li>
+  </ul>
+</ul>
+
+<p></p>
+
+<ul>
   <li style = "font-weight: 700;"> numOne.addEventListener(“click”, funct_to_be_executed()); </li>
 </ul>
 
+<p></p>
 
+<ul>
+  <li style = "font-weight: 700;"> var node = document.createElement("p"); </li>
+</ul>
 
-
+<ul>
+  <li style = "font-weight: 700;"> document.body.appendChild(node); </li>
+</ul>
 
 </ul>
 </div>
@@ -211,6 +211,7 @@
   <p><a href ="./js.html">Javascript</a></p>
   <p><a href ="./HTMLattributes.html">HTML Attributes</a></p>
   <p><a href ="./HTMLtags.html">HTML tags</a></p>
+  <p><a href ="./ruby.html">Ruby</a></p>
 
 
   </div>
